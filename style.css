@@ -1,0 +1,56 @@
+*{
+list-style:none;
+margin:0; 
+padding:0;
+text-decoration:none;
+}
+header{
+    width:100% ;
+    height: 100vh;
+    background-image:url(coche.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.nav{
+display: flex;
+justify-content: space-between;
+
+}
+nav::after{
+    content:"";
+    background-color: black;
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    top:10%;
+}
+ul{
+    display: flex;
+}
+.nav__ul--anchors > li{
+padding: 10px;
+display: flex;
+align-items: center;
+}
+.nav__ul--icons >li{
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+li img{
+    width: 50%;
+}
+.logo{
+    width: 15%;
+}
+.header__div{
+    position: absolute;
+    top:80%;
+    left: 10%;
+}
+.header__div--button{
+    padding: 10px;
+    background-color: blue;
+
+}
