@@ -1,57 +1,252 @@
 *{
-list-style:none;
-margin:0; 
-padding:0;
-text-decoration:none;
-}
-header{
-width: 100%;
-height: 100vh;
-background-image:url(headerfoto.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-position: relative;
-}
-nav{
-display: flex;
-justify-content: space-between;
-}
-nav::after{
-content: "";
-background-color: black;
-width: 70%;
-height: 1px;
-position: absolute;
-top:10%;
-}
-ul{
-display:flex;
-   
-}
-.nav__ul--anchors > li{
-padding: 10%;
-display: flex;
-align-items: center;
-}
-.nav__ul--icons > li{
-    padding: 10%;
+    list-style:none;
+    margin:0; 
+    padding:0;
+    font-size: 1.2em;
+    text-decoration:none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    header{
+    width: 100%;
+    height: 80vh;
+    background-image:url(/assets/header.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    }
+    nav{
     display: flex;
     align-items: center;
-}
-li img{
-    width: 50%;
-}
-.logo{
-    width: 30%;
-}
-.header__div{
-    position: absolute;
-    top:80%;
-    left: 10%;
-}
-.header__div--button{
-    padding: 10px;
-    background-color: #3b88c3;
-    border: none;
-    border-radius: 10px;
-}
+    justify-content: space-evenly;
+    }
+    nav::after{
+    content: "";
+    background-color:white;
+    opacity: 0.4;
+    width: 75%;
+    margin: 0%;
+    height: 1px;
+    position:absolute;
+    top:14%;
+    }
+    nav ul{
+   display: flex;
+   font-size: 1.4em;
+    }
+    .nav__ul--anchors > li{
+        display: flex;
+        border-color: transparent;
+        border-width: 0;
+        border-bottom-width: 4px;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+        position: relative;
+        font-size: 1em;
+        height: 99px;   
+    }
+   .nav__ul--anchors a{
+        color: white;
+    }
+    .nav__ul--icons li{
+      margin: 10px;
+       padding: 3px;
+    }
+    .logo{
+        width: 10%; 
+    }
+    .header__div{
+        color:white;
+        position: absolute;
+        top:80%;
+        left: 10%;
+    }
+    .header__div h1{ 
+      font-size: 2.2em;
+    }
+    .header__div--button{
+        color:white;
+        margin: 5px;
+        padding: 10px;
+        background-color:rgb(28,104,213);
+        border: none;
+    }
+    .main__h3{
+        margin-left: 6.5%;
+        padding: 3px;
+        color: grey;
+    }
+    .main__ul--list{
+      margin: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        color: grey;
+    }
+    .main__ul--list li:hover{
+        color: black;
+        border-bottom: 5px solid rgb(28,104,213);
+    }
+    .main__ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .container {
+      justify-content: space-around;
+      display: flex;
+      -webkit-box-align: start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin: 30px;
+      padding: 10px;
+    }
+    .card {
+    display: flex;
+    padding: 1rem;
+    width: 450px;
+    height: 550px;
+    cursor: pointer;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    } 
+    .product-image {
+      margin: 20px;
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+      height:100%;
+      transform: translate(0, -1.5rem);
+      transition: transform 500ms ease-in-out;
+      filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+    }
+    .product-image img{
+      width: 100%;
+      height:85%;
+      object-fit: cover;
+    }
+    .product-info {
+      font-size: 1.4rem;
+    }
+    
+    .card:hover .product-image {
+      transform: translate(-1.5rem, -7rem) rotate(-20deg);
+    }
+    
+    .product-info h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    .product-info p {
+      margin: 0.4rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .price {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    .btn {
+    margin-top: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  
+    }
+    .buy-btn {
+      background-color: white;
+      border: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: 300ms ease;
+      padding: 5px;
+      margin: 5px;
+    }
+    .buy-btn:hover {
+      color:white;
+      background-color: rgb(28,104,213);
+    }
+    .wrap, .video {
+      margin-left: 380px;
+      display: flex;
+      align-items: stretch;
+      width: 80%;
+      gap: 24px;
+      padding: 24px;
+    }
+    
+    .box {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      position: relative;
+      padding: 24px;
+      background: #fff;
+      box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .box-top {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+    
+    .box-image {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      object-position: 50% 20%;
+    }
+    
+    .title-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .box-title {
+      border-left: 3px solid var(--purple);
+      padding-left: 12px;
+    }
+    
+    .user-follow-info {
+      color: hsl(0, 0%, 60%);
+    }
+    
+    .button {
+      background-color: white;
+      border: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: 300ms ease;
+      padding: 5px;
+      margin: 5px;
+      text-decoration: none;
+      margin-top: 5px;
+      padding: 5px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .button:hover {
+      color:white;
+      background-color: rgb(28,104,213);
+    }
+    .description {
+      white-space: wrap;
+    }
+    .box-images, iframe{
+      width: 100%;
+      height: 690px;
+    }
+ .content-1{
+  display: flex;
+ }
